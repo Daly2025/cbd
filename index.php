@@ -38,6 +38,25 @@
         .dropdown-content a { float: none; color: black; padding: 12px 16px; text-decoration: none; display: block; text-align: left; }
         .dropdown-content a:hover { background-color: #ddd; }
         .dropdown:hover .dropdown-content { display: block; }
+
+        /* Estilos para el footer y los iconos de redes sociales */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            width: 100%;
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 15px;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #ddd;
+        }
     </style>
 </head>
 <body>
@@ -60,6 +79,16 @@
 
     <div class="hero-section">
         <img src="img/logo.jpg" alt="Logo Tienda CBD">
+    </div>
+
+    <div class="footer">
+        <div class="social-icons">
+            <a href="https://www.instagram.com/bienstarcbd?igsh=MWFkaDkxdW5pbTRwbA==" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1FEuUMKiQZ/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://x.com/BienstarCBD?t=8Zpt-NtUjXYlF1csC6C9uA&s=09" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.tiktok.com/@bienestar.cbd?_r=1&_t=ZN-91791vvzJ26" target="_blank"><i class="fa fa-tiktok"></i></a>
+        </div>
+        <p>&copy; 2023 Bienstar CBD. Todos los derechos reservados.</p>
     </div>
 
 </body>
