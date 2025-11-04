@@ -63,13 +63,22 @@
 
         <div class="product-grid">
             <!-- 20 Productos de ejemplo para Flores CBD -->
-            <?php for ($i = 1; $i <= 20; $i++): ?>
+            <?php for ($i = 1; $i <= 20; $i++): 
+                $product_id = 'flor_' . $i;
+                $product_name = 'Flor CBD Ejemplo ' . $i;
+                $product_price = rand(15, 50);
+            ?>
                 <div class="product-card">
-                    <img src="img/flor_cbd_<?php echo $i; ?>.jpg" alt="Flor CBD <?php echo $i; ?>">
-                    <h3>Flor CBD Ejemplo <?php echo $i; ?></h3>
+                    <img src="img/flor_cbd_<?php echo $i; ?>.jpg" alt="<?php echo $product_name; ?>">
+                    <h3><?php echo $product_name; ?></h3>
                     <p>Descripción de la flor CBD número <?php echo $i; ?>.</p>
-                    <div class="price"><?php echo rand(15, 50); ?>,00 €</div>
-                    <a href="#" class="add-to-cart">Añadir a la cesta</a>
+                    <div class="price"><?php echo $product_price; ?>,00 €</div>
+                    <form action="add_to_cart.php" method="post">
+                        <input type="hidden" name="product_id" value="<?php echo $product_id; ?>">
+                        <input type="hidden" name="product_name" value="<?php echo $product_name; ?>">
+                        <input type="hidden" name="product_price" value="<?php echo $product_price; ?>">
+                        <button type="submit" class="add-to-cart">Añadir a la cesta</button>
+                    </form>
                 </div>
             <?php endfor; ?>
         </div>
