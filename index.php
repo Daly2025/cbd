@@ -42,6 +42,34 @@
         .social-icons a:hover {
             color: #ddd;
         }
+
+        /* Estilos mejorados para los botones de navegación */
+        .navbar .nav-link, .navbar .dropdown-toggle {
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .navbar .nav-link:hover, .navbar .dropdown-toggle:hover {
+            background-color: #555;
+            color: #fff;
+        }
+
+        .dropdown-menu {
+            background-color: #333;
+            border: none;
+        }
+
+        .dropdown-item {
+            color: #fff;
+            transition: background-color 0.3s;
+        }
+
+        .dropdown-item:hover {
+            background-color: #555;
+            color: #fff;
+        }
     </style>
 </head>
 <body class="h-100">

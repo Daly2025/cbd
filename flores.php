@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda CBD - Flores</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
         .navbar { background-color: #333; overflow: hidden; }
         .navbar a { float: left; display: block; color: white; text-align: center; padding: 14px 20px; text-decoration: none; }
         .navbar a:hover { background-color: #ddd; color: black; }
+        .navbar .cart-icon {
+            float: right;
+            color: white;
+            padding: 14px 20px;
+        }
         .container { padding: 20px; }
         .submenu { background-color: #eee; overflow: hidden; padding: 10px 0; margin-bottom: 20px; }
         .submenu a { float: left; display: block; color: #333; text-align: center; padding: 10px 15px; text-decoration: none; }
@@ -41,6 +47,7 @@
         <a href="index.php">Inicio</a>
         <a href="shop.php">Tienda</a>
         <a href="contact.php">Contacto</a>
+        <a href="carrito.php" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
     </div>
 
     <div class="container">
