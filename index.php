@@ -79,7 +79,7 @@
                 <a href="https://x.com/BienstarCBD?t=8Zpt-NtUjXYlF1csC6C9uA&s=09" target="_blank"><i class="fa fa-twitter"></i></a>
                 <a href="https://www.tiktok.com/@bienestar.cbd?_r=1&_t=ZN-91791vvzJ26" target="_blank"><i class="fa fa-tiktok"></i></a>
             </div>
-            <p class="mb-0">&copy; 2023 Bienstar CBD. Todos los derechos reservados.</p>
+            <p class="mb-0">&copy; 2025 Bienstar CBD. Todos los derechos reservados.</p>
         </footer>
     </div>
 
