@@ -1,57 +1,42 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda CBD - Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
-        .navbar { background-color: #333; overflow: hidden; position: relative; z-index: 10; }
-        .navbar a { float: left; display: block; color: white; text-align: center; padding: 14px 20px; text-decoration: none; }
-        .navbar a:hover { background-color: #ddd; color: black; }
+        body {
+            background-color: #000;
+            color: white;
+            overflow: hidden; /* Evita el scroll */
+        }
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
         .hero-section {
+            flex-grow: 1;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: calc(100vh - 50px); /* Ajusta la altura para que el navbar no lo cubra */
-            background-color: #000; /* Fondo negro como en la imagen */
-            padding: 20px;
-            box-sizing: border-box;
+            background-color: #000;
         }
         .hero-section img {
-            max-width: 90%; /* Para que el logo no se salga de los bordes en pantallas pequeñas */
-            max-height: 90vh; /* Limita la altura para que no sea excesiva */
-            object-fit: contain; /* Asegura que la imagen se ajuste sin recortarse */
+            max-width: 90%;
+            max-height: 70vh; /* Ajusta la altura máxima del logo */
+            object-fit: contain;
         }
-        .container {
-            padding: 20px;
-            background-color: #f4f4f4; /* Fondo del contenido */
-            position: relative;
-            z-index: 10;
-        }
-        /* Estilos para el submenú desplegable */
-        .dropdown { float: left; overflow: hidden; }
-        .dropdown .dropbtn { font-size: 16px; border: none; outline: none; color: white; padding: 14px 20px; background-color: inherit; font-family: inherit; margin: 0; }
-        .navbar a:hover, .dropdown:hover .dropbtn { background-color: #ddd; color: black; }
-        .dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; }
-        .dropdown-content a { float: none; color: black; padding: 12px 16px; text-decoration: none; display: block; text-align: left; }
-        .dropdown-content a:hover { background-color: #ddd; }
-        .dropdown:hover .dropdown-content { display: block; }
-
-        /* Estilos para el footer y los iconos de redes sociales */
         .footer {
             background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            position: relative;
-            width: 100%;
+            padding: 15px 0;
         }
         .social-icons a {
             color: white;
-            margin: 0 15px;
-            font-size: 24px;
+            margin: 0 10px;
+            font-size: 20px;
             text-decoration: none;
         }
         .social-icons a:hover {
@@ -59,37 +44,45 @@
         }
     </style>
 </head>
-<body>
-    <div class="navbar">
-        <div class="dropdown">
-            <button class="dropbtn">Inicio
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="flores.php">Flores</a>
-                <a href="resinas.php">Resinas</a>
-                <a href="vapers.php">Vapers</a>
-                <a href="aceites_cremas.php">Aceites y Cremas</a>
-                <a href="#sobre-nosotros">Sobre Nosotros</a>
+<body class="h-100">
+
+    <div class="main-container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Inicio
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="flores.php">Flores</a></li>
+                        <li><a class="dropdown-item" href="resinas.php">Resinas</a></li>
+                        <li><a class="dropdown-item" href="vapers.php">Vapers</a></li>
+                        <li><a class="dropdown-item" href="aceites_cremas.php">Aceites y Cremas</a></li>
+                        <li><a class="dropdown-item" href="#sobre-nosotros">Sobre Nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-nav">
+                    <a class="nav-link" href="shop.php">Tienda</a>
+                    <a class="nav-link" href="contact.php">Contacto</a>
+                </div>
             </div>
+        </nav>
+
+        <div class="hero-section">
+            <img src="img/logo.jpg" alt="Logo Tienda CBD" class="img-fluid">
         </div>
-        <a href="shop.php">Tienda</a>
-        <a href="contact.php">Contacto</a>
+
+        <footer class="footer text-center">
+            <div class="social-icons mb-2">
+                <a href="https://www.instagram.com/bienstarcbd?igsh=MWFkaDkxdW5pbTRwbA==" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/share/1FEuUMKiQZ/" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://x.com/BienstarCBD?t=8Zpt-NtUjXYlF1csC6C9uA&s=09" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.tiktok.com/@bienestar.cbd?_r=1&_t=ZN-91791vvzJ26" target="_blank"><i class="fa fa-tiktok"></i></a>
+            </div>
+            <p class="mb-0">&copy; 2023 Bienstar CBD. Todos los derechos reservados.</p>
+        </footer>
     </div>
 
-    <div class="hero-section">
-        <img src="img/logo.jpg" alt="Logo Tienda CBD">
-    </div>
-
-    <div class="footer">
-        <div class="social-icons">
-            <a href="https://www.instagram.com/bienstarcbd?igsh=MWFkaDkxdW5pbTRwbA==" target="_blank"><i class="fa fa-instagram"></i></a>
-            <a href="https://www.facebook.com/share/1FEuUMKiQZ/" target="_blank"><i class="fa fa-facebook"></i></a>
-            <a href="https://x.com/BienstarCBD?t=8Zpt-NtUjXYlF1csC6C9uA&s=09" target="_blank"><i class="fa fa-twitter"></i></a>
-            <a href="https://www.tiktok.com/@bienestar.cbd?_r=1&_t=ZN-91791vvzJ26" target="_blank"><i class="fa fa-tiktok"></i></a>
-        </div>
-        <p>&copy; 2023 Bienstar CBD. Todos los derechos reservados.</p>
-    </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
