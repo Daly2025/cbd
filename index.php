@@ -58,7 +58,7 @@
                         <li><a class="dropdown-item" href="resinas.php">Resinas</a></li>
                         <li><a class="dropdown-item" href="vapers.php">Vapers</a></li>
                         <li><a class="dropdown-item" href="aceites_cremas.php">Aceites y Cremas</a></li>
-                        <li><a class="dropdown-item" href="#sobre-nosotros">Sobre Nosotros</a></li>
+                        <li><a class="dropdown-item" href="sobre_nosotros.php">Sobre Nosotros</a></li>
                     </ul>
                 </div>
                 <div class="navbar-nav">
