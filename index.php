@@ -42,10 +42,5 @@
         <img src="img/logo.jpg" alt="Logo Tienda CBD">
     </div>
 
-    <div class="container">
-        <h1>Bienvenido a nuestra Tienda CBD</h1>
-        <p>Aquí encontrarás los mejores productos de CBD de alta calidad.</p>
-        <p>Explora nuestra tienda para ver todos los productos disponibles.</p>
-    </div>
 </body>
 </html>

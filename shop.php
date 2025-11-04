@@ -26,7 +26,6 @@
     </style>
 </head>
 <body>
-    // Eliminado el menú duplicado de shop.php
     <?php
         // Incluir el contenido de flores.php por defecto
         include 'flores.php';
