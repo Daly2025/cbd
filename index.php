@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda CBD - Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
         .navbar { background-color: #333; overflow: hidden; position: relative; z-index: 10; }
@@ -29,11 +30,30 @@
             position: relative;
             z-index: 10;
         }
+        /* Estilos para el submenú desplegable */
+        .dropdown { float: left; overflow: hidden; }
+        .dropdown .dropbtn { font-size: 16px; border: none; outline: none; color: white; padding: 14px 20px; background-color: inherit; font-family: inherit; margin: 0; }
+        .navbar a:hover, .dropdown:hover .dropbtn { background-color: #ddd; color: black; }
+        .dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; }
+        .dropdown-content a { float: none; color: black; padding: 12px 16px; text-decoration: none; display: block; text-align: left; }
+        .dropdown-content a:hover { background-color: #ddd; }
+        .dropdown:hover .dropdown-content { display: block; }
     </style>
 </head>
 <body>
     <div class="navbar">
-        <a href="index.php">Inicio</a>
+        <div class="dropdown">
+            <button class="dropbtn">Inicio
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="flores.php">Flores</a>
+                <a href="resinas.php">Resinas</a>
+                <a href="vapers.php">Vapers</a>
+                <a href="aceites_cremas.php">Aceites y Cremas</a>
+                <a href="#sobre-nosotros">Sobre Nosotros</a>
+            </div>
+        </div>
         <a href="shop.php">Tienda</a>
         <a href="contact.php">Contacto</a>
     </div>
