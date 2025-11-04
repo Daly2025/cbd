@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,6 +15,17 @@
             float: right;
             color: white;
             padding: 14px 20px;
+            position: relative; /* Para posicionar el contador */
+        }
+        .navbar .cart-count {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 2px 6px;
+            font-size: 10px;
         }
         .container { padding: 20px; }
         .submenu { background-color: #eee; overflow: hidden; padding: 10px 0; margin-bottom: 20px; }
@@ -47,7 +59,20 @@
         <a href="index.php">Inicio</a>
         <a href="shop.php">Tienda</a>
         <a href="contact.php">Contacto</a>
-        <a href="carrito.php" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+        <a href="carrito.php" class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <?php 
+                $cart_count = 0;
+                if(isset($_SESSION['cart'])) {
+                    foreach($_SESSION['cart'] as $item) {
+                        $cart_count += $item['quantity'];
+                    }
+                }
+                if ($cart_count > 0) {
+                    echo '<span class="cart-count">' . $cart_count . '</span>';
+                }
+            ?>
+        </a>
     </div>
 
     <div class="container">
