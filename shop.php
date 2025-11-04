@@ -26,12 +26,7 @@
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="index.php">Inicio</a>
-        <a href="shop.php">Tienda</a>
-        <a href="contact.php">Contacto</a>
-    </div>
-
+    // Eliminado el menú duplicado de shop.php
     <?php
         // Incluir el contenido de flores.php por defecto
         include 'flores.php';
